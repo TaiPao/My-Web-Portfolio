@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Projects — Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+</head>
+<body>
+    <div class="site-container">
+        <nav class="sidebar" aria-label="Main navigation">
+            <div class="profile-summary">
+                <button class="avatar-btn" aria-label="Open profile picture">
+                    <img src="assets/picture/Myface.jpg" alt="Nguyen Thai Bao" class="avatar" />
+                </button>
+                <h2 class="name">Nguyen Thai Bao</h2>
+                <p class="role">Web Developer | Student</p>
+            </div>          
+            <ul class="nav-links" role="menu">
+                <li><a href="index.html"><i class="fas fa-home"></i><span>Home</span></a></li>
+                <li><a href="project.html" class="active"><i class="fas fa-project-diagram"></i><span>Projects</span></a></li>
+                <li><a href="hobbies.html"><i class="fas fa-heart"></i><span>Hobbies</span></a></li>
+                <li><a href="contact.html"><i class="fas fa-envelope"></i><span>Contact</span></a></li>
+            </ul>
+        </nav>      
+        <div class="floating-social">
+            <button id="socialToggle2" class="floating-btn" aria-label="Open social links"><i class="fas fa-share-alt"></i></button>
+            <div id="socialList2" class="social-list" aria-hidden="true">
+                <a class="social-icon" href="https://www.facebook.com/bao.nguyen.thai.212002" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a class="social-icon" href="https://www.instagram.com/baothai.win/" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a class="social-icon" href="https://www.linkedin.com/in/nguyenthaibao04042003/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+        </div>      
+        <main class="content-area" id="mainContent2" tabindex="-1">
+            <section class="section-content reveal">
+                <header class="main-header">
+                    <h1>Projects</h1>
+                    <p class="tagline">A few personal projects — screenshots, descriptions and links.</p>
+                </header>              
+                <div class="project-grid">
+                    <!-- PROJECT WITH VIDEO -->
+                    <article class="project-card reveal">
+                        <div class="video-wrapper">
+                            <video class="project-video" controls>
+                                <source src="assets/video/dinosaur.mp4" type="video/mp4">
+                            </video>                           
+                        </div>
+                    
+                        <div class="project-body">
+                            <h3>My camera shot in the past</h3>
+                            
+                        </div>
+                    </article>
+
+                    <article class="project-card reveal">
+                        <div class="video-wrapper">
+                            <video class="project-video" controls>
+                                <source src="assets/video/noodle.mp4" type="video/mp4">
+                            </video>                           
+                        </div>
+                    
+                        <div class="project-body">
+                            <h3>My AI-created favorite food</h3>
+                            
+                        </div>
+                    </article>
+                </div>
+            </section>          
+            <footer class="main-footer">
+                <div>&copy; 2025 Nguyen Thai Bao</div>
+                <div><a href="mailto:nguyenthaibaosinhvien@gmail.com">nguyenthaibaosinhvien@gmail.com</a></div>
+            </footer>
+        </main>
+    </div>
+
+    <div id="lightbox" class="lightbox" role="dialog" aria-hidden="true">
+        <button class="lb-close" aria-label="Close">&times;</button>
+        <img class="lb-img" src="" alt="Full image" />
+    </div>
+
+    <div id="videoModal" class="video-modal" role="dialog" aria-hidden="true">
+        <button class="vm-close" aria-label="Close video">&times;</button>
+        <video controls class="vm-player" src=""></video>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

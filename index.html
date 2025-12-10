@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Portfolio — Nguyen Thai Bao</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+</head>
+<body>
+    <div class="site-container">
+    <!-- Sidebar (fixed on left) -->
+    <nav class="sidebar" aria-label="Main navigation">
+        <div class="profile-summary">
+        <button class="avatar-btn" id="avatarBtn" aria-label="Open profile picture">
+            <img src="assets/picture/Myface.jpg" alt="Nguyen Thai Bao" class="avatar" />
+        </button>
+        <h2 class="name">Nguyen Thai Bao</h2>
+        <p class="role">Web Developer | Student</p>
+        </div>
+
+        <ul class="nav-links" role="menu">
+            <li><a href="index.html"><i class="fas fa-home"></i><span>Home</span></a></li>
+            <li><a href="project.html"><i class="fas fa-project-diagram"></i><span>Projects</span></a></li>
+            <li><a href="hobbies.html"><i class="fas fa-heart"></i><span>Hobbies</span></a></li>
+            <li><a href="contact.html"><i class="fas fa-envelope"></i><span>Contact</span></a></li>
+        </ul>
+    </nav>
+
+    <!-- Floating Social button (fixed top-right) -->
+    <div class="floating-social" aria-hidden="false">
+        <button id="socialToggle" class="floating-btn" aria-label="Open social links">
+            <i class="fas fa-share-alt"></i>
+        </button>
+        <div id="socialList" class="social-list" aria-hidden="true">
+            <a class="social-icon" href="https://www.facebook.com/bao.nguyen.thai.212002" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a class="social-icon" href="https://www.instagram.com/baothai.win/" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a class="social-icon" href="https://www.linkedin.com/in/nguyenthaibao04042003/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+    </div>
+
+    <!-- Main content area -->
+    <main class="content-area" id="mainContent" tabindex="-1">
+    <section class="section-content reveal">
+        <header class="main-header">
+            <h1>Welcome — I'm <span class="accent">Bao</span></h1>
+            <p class="tagline">Senior student • Web developer • UX/UI enthusiast</p>
+        </header>
+    
+        <article class="intro-box">
+            <h2>About me</h2>
+            <p>
+                Hi! <br>
+                My name is Bao, I'm currently a senior in Tongmyoung University, South Korea. I'm majoring in Information Technology of the 2+2 international program. <br>
+                I have spent 2 years of my university life in Viet Nam before continuing my next 2 years in Busan, Korea. <br>
+                This website is all about my information and I would take it as my portfolio too! <br>
+                Check out my site regularly because I will update it frequently. <br>
+                Thank you for spending some time to take a look here. You can get to know me more in any other ways. <br>
+                BYE. <br>
+            </p>
+        
+        <div class="media-row">
+            <div class="card">
+                <h3>PURPOSE</h3>
+                <ul>
+                    <li>I use this website as a CV and Portfolio</li>
+                    <li>And also for my homework right now</li>
+                    <li>Name: NGUYEN THAI BAO</li>
+                    <li>ID: 20220009</li>
+                </ul>
+            </div>
+        
+            <div class="card">
+                <h3>Quick Links</h3>
+                <p><a href="project.html">Go To My Projects →</a></p>
+                <p><a href="hobbies.html">Go To My Hobbies →</a></p>
+            </div>
+        
+            <div class="card">
+                <h3>One of my favorite random Videos</h3>
+                <div class="video-wrapper">
+                            <video class="project-video" controls>
+                                <source src="assets/video/theboy.mp4" type="video/mp4">
+                            </video>                           
+                        </div>
+            </div>
+        </div>
+        </article>
+    
+        <section class="gallery">
+        <h2>Gallery</h2>
+        <div class="grid">
+            <button class="gallery-item" data-full="assets/project1.jpg" aria-label="Open image 1"><img src="assets/picture/robot.jpg" alt="Project 1" /></button>
+            <button class="gallery-item" data-full="assets/project2.jpg" aria-label="Open image 2"><img src="assets/picture/grafiti.jpg" alt="Project 2" /></button>
+            <button class="gallery-item" data-full="assets/project3.jpg" aria-label="Open image 3"><img src="assets/picture/Blunalu.jpg" alt="Project 3" /></button>
+        </div>
+        </section>
+    </section>
+
+    <footer class="main-footer">
+        <div>&copy; 2025 Nguyen Thai Bao</div>
+        <div><a href="mailto:nguyenthaibaosinhvien@gmail.com">nguyenthaibaosinhvien@gmail.com</a> • (+84) XXXX XXXX</div>
+    </footer>
+    </main>
+    </div>
+
+    <!-- Lightbox / Image Modal -->
+    <div id="lightbox" class="lightbox" role="dialog" aria-hidden="true">
+        <button class="lb-close" aria-label="Close">&times;</button>
+        <img class="lb-img" src="" alt="Full image" />
+    </div>
+
+    <!-- Video Modal -->
+    <div id="videoModal" class="video-modal" role="dialog" aria-hidden="true">
+        <button class="vm-close" aria-label="Close video">&times;</button>
+        <video controls class="vm-player" src=""></video>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
